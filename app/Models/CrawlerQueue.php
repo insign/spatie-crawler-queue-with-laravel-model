@@ -36,6 +36,11 @@ class CrawlerQueue extends Model
         $this->attributes[ 'html' ] = $html;
     }
 
+    public function getHtmlAttribute($html)
+    {
+        return json_decode($html);
+    }
+
     /**
      *
      * @param UriInterface|CrawlUrl $crawlUrl

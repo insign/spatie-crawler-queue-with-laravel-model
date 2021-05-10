@@ -27,8 +27,8 @@ class CrawlerQueues extends Migration
             $table->index('expires_at');
 
             $table->timestamps();
-            // @OBS deleted_at = soft delete = processado
-            $table->softDeletes()->comment('Significa processado');
+            // @OBS deleted_at = soft delete = processed
+            $table->softDeletes()->comment('Means processed');
         });
     }
 
