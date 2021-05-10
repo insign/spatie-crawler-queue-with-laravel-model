@@ -11,7 +11,7 @@
         "laravel/framework": "^8.12",
         "laravel/tinker": "^2.5",
         "mvdnbrk/laravel-model-expires": "^1.8",
-        "spatie/crawler": "^7.0",
+        "spatie/crawler": "^7.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
