@@ -11,6 +11,7 @@ This is just a laravel application 8.x with a model class, a queue class, a migr
 
 > Processed items are marked as [soft-deleted](https://laravel.com/docs/8.x/eloquent#soft-deleting)
 
+# Steps
 1. Clone the repo
 2. Run `composer install`
 3. Run `php artisan migration` (after configure `database.php`)
@@ -18,7 +19,7 @@ This is just a laravel application 8.x with a model class, a queue class, a migr
 5. Run `php artisan craw https://site_or_blog.com`
 
 Main files to take a look:
-* `app/Console/Commands/CrawlerRun.php`
-* `app/Models/CrawlerQueue.php`
-* `app/Observers/Crawler/ConsoleObserver.php`
-* `Database/migrations/2021_05_07_041816_crawler_queues.php`
+* [`app/Console/Commands/CrawlerRun.php`](app/Console/Commands/CrawlerRun.php)
+* [`app/Models/CrawlerQueue.php`](app/Models/CrawlerQueue.php)
+* [`app/Observers/Crawler/ConsoleObserver.php`](app/Observers/Crawler/ConsoleObserver.php)
+* [`database/migrations/2021_05_07_041816_crawler_queues.php`](database/migrations/2021_05_07_041816_crawler_queues.php)
