@@ -1,10 +1,14 @@
 # spatie-crawler-queue-with-laravel-model
-Spatie's Crawler with Laravel Model
+[Spatie's Crawler](https://github.com/spatie/crawler) with Laravel Model as Queue
 
 This is just a laravel application 8.x with a model class, a queue class, a migration class and a command class to use Spatie's Crawler package.
 
 ### Why this is better than others spatie/crawler queues packages?
-> The main reason is the the queues store all items in one single array, which can be a RAM problem for big sites.
+> The main reason is the others queues packages store all items in one single array, which can be a RAM problem for big sites.
+> Furthermore, you can preserve and use crawled links as you want
+
+To expire items we use [mvdnbrk/laravel-model-expires](https://github.com/mvdnbrk/laravel-model-expires)
+Processed items are marked as [soft-deleted](https://laravel.com/docs/8.x/eloquent#soft-deleting)
 
 1. Clone the repo
 2. Run `composer install`
